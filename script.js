@@ -14,10 +14,10 @@ const checkBtnHandler = () => {
   if (!inputValue) {
     window.alert("Please provide a phone number");
   } else if (validNumbersExp.test(inputValue)) {
-    resultsDiv.innerHTML += `<p>Valid US number: ${inputValue}</p>`;
+    resultsDiv.textContent = `Valid US number: ${inputValue}`;
   }
   else {
-    resultsDiv.innerHTML += `<p>Invalid US number: ${inputValue}</p>`;
+    resultsDiv.textContent = `Invalid US number: ${inputValue}`;
   }
 };
 
